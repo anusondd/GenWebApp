@@ -9,6 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
     <title>GenWebApp - Start Bootstrap Theme</title>
 
     <!-- Bootstrap Core CSS -->
@@ -30,6 +36,120 @@
 
 </head>
 
+<style type="text/css">
+    
+    .bs-calltoaction{
+    position: relative;
+    width:auto;
+    padding: 15px 25px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+    .bs-calltoaction > .row{
+        display:table;
+        width: calc(100% + 30px);
+    }
+     
+        .bs-calltoaction > .row > [class^="col-"],
+        .bs-calltoaction > .row > [class*=" col-"]{
+            float:none;
+            display:table-cell;
+            vertical-align:middle;
+        }
+
+            .cta-contents{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+                .cta-title{
+                    margin: 0 auto 15px;
+                    padding: 0;
+                }
+
+                .cta-desc{
+                    padding: 0;
+                }
+
+                .cta-desc p:last-child{
+                    margin-bottom: 0;
+                }
+
+            .cta-button{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+@media (max-width: 991px){
+    .bs-calltoaction > .row{
+        display:block;
+        width: auto;
+    }
+
+        .bs-calltoaction > .row > [class^="col-"],
+        .bs-calltoaction > .row > [class*=" col-"]{
+            float:none;
+            display:block;
+            vertical-align:middle;
+            position: relative;
+        }
+
+        .cta-contents{
+            text-align: center;
+        }
+}
+
+
+
+.bs-calltoaction.bs-calltoaction-default{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.bs-calltoaction.bs-calltoaction-primary{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.bs-calltoaction.bs-calltoaction-info{
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.bs-calltoaction.bs-calltoaction-success{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.bs-calltoaction.bs-calltoaction-warning{
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.bs-calltoaction.bs-calltoaction-danger{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.bs-calltoaction.bs-calltoaction-primary .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-info .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-success .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-warning .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-danger .cta-button .btn{
+    border-color:#fff;
+}
+
+</style>
+
 <body>
 
     <!-- Navigation -->
@@ -50,7 +170,10 @@
                 <a href="#services" onclick=$("#menu-close").click();>Installing Tools</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>CreateWebapplication</a>
+                <a href="#Step" onclick=$("#menu-close").click();>CreateWebapplication</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Example WebApplication</a>
             </li>
             <li>
                 <a href="#pe-test" onclick=$("#menu-close").click();>Pe-Test</a>
@@ -93,9 +216,12 @@
                 <div class="col-lg-12 text-center">
                     <h3>CodeIgniter!</h3>
                     <p class="lead">CodeIgniter คือ  framework ที่ถูกพัฒนาขึ้นด้วย ภาษา PHP สำหรับ CodeIgniter Framework เป็นเครื่องมือสำหรับช่วยพัฒนาเว็บไซต์และเว็บแอปผลิเคชั่น โดยมีโครงสร้างการพัฒนาโปรแกรมอย่างเป็นระบบและรวมคำสั่งต่างๆ ที่จำเป็นต่อการพัฒนาเว็บไซต์ด้วย PHP ใว้ภายใน CodeIgniter พัฒนาโดย Rick Ellis ซึ่งมีลิขสิทธิเป็น Open Source สามารถดาวน์โหลดและใช้ได้ฟรี ถูกพัฒนาขึ้นตั้งแต่ปี 2006 และยังมีการพัฒนามาเรื่อยๆ จนถึงปัจจุบัน <a target="_blank" href="http://www.codeigniter.in.th/">Lean More</a>.</p>
+                    <a href="#services" class="btn btn-dark btn-lg">ขั้นตอนต่อไป</a>
                 </div>
+
             </div>
             <!-- /.row -->
+
         </div>
         <!-- /.container -->
     </section>
@@ -178,37 +304,47 @@
         <!-- /.container -->
     </section>
 
+
+
     <!-- Callout -->
     <aside class="callout">
+
         <div class="text-vertical-center">
             <div id="carousel-id" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-id" data-slide-to="0" class=""></li>
                     <li data-target="#carousel-id" data-slide-to="1" class=""></li>
                     <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+                    <li data-target="#carousel-id" data-slide-to="3" class=""></li>
+
                 </ol>
                 <div class="carousel-inner">
-                    <div class="item">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ESXgJ9-H-2U?list=PLIxIDUjMJfq1gpreMLcNabKldiWZ-mywr" frameborder="0" allowfullscreen></iframe>
+
+                    <div class="item active">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/y5KHqaTzOdg" frameborder="0" allowfullscreen></iframe>
                         <div class="container">
-                            <h1>One more for good measure.</h1>
+                            <h1>Download CodeIgniter.</h1>
                         </div>
                     </div>
                     <div class="item ">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ESXgJ9-H-2U?list=PLIxIDUjMJfq1gpreMLcNabKldiWZ-mywr" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/8fE6pbZGNik" frameborder="0" allowfullscreen></iframe>
                         <div class="container">
-                            <h1>One more for good measure.</h1>
+                            <h1>แตกไฟล์ CodeIgniter.</h1>
                         </div>
                     </div>
-                    <div class="item active">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ESXgJ9-H-2U?list=PLIxIDUjMJfq1gpreMLcNabKldiWZ-mywr" frameborder="0" allowfullscreen></iframe>
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>One more for good measure.</h1>
-                                
-                            </div>
+                    <div class="item ">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/9otLJma0si4" frameborder="0" allowfullscreen></iframe>
+                        <div class="container">                            
+                                <h1>Download&Install Xampp.</h1>                               
                         </div>
                     </div>
+                    <div class="item ">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/WR0q79Xdl_M" frameborder="0" allowfullscreen></iframe>
+                        <div class="container">                            
+                                <h1>Download&Install Sublime Text.</h1>                               
+                        </div>
+                    </div>
+
                 </div>
                 <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
                 <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -217,13 +353,165 @@
     </aside>
 
 
+<section id="Step" class="Step " >
+
+    <div class="bs-calltoaction bs-calltoaction-success">
+        <div class="text-center">
+            <h1>CreateWebapplication</h1>
+        </div>
+    </div>
+
+<div class="container">
+            <div class="col-sm-12">
+
+                <div class="bs-calltoaction bs-calltoaction-default">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">Step1 Simple Run WebApplication</h1>
+                            <div class="cta-desc">
+                                <h3>1.Start Xampp การใช้งาน Xampp เพื่อใช้รัน WebApplication</h3>
+                                <p>อันดับแรกให้คลิก XAMPP Control Panel ขึ้นมาแล้วคลิก Start->Apache และ Start->MySQL </p>
+                                <h3>2.การนำไฟล์โปรเจคเข้าสู่ Server เพื่อรันโปรเจค</h3>
+                                <p>ให้ Coppy ไฟล์ SimpleWebApp ที่เตรียมไว้ไปที่ C:\xampp\htdocs </p>
+                                <h3>3.ทำการรันโปรเจค SimpleWebApp</h3>
+                                <p>ให้เปิด Browser ขึ้นมาแล้วพิมพ์ที่อยู่โปรเจค <a href="http://localhost/SimpleWebApp" >http://localhost/SimpleWebApp</a> </p> 
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a  class="btn btn-lg btn-block btn-default" data-toggle="modal" data-target="#myModal">View Video</a>
+
+
+
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+            <div class="text-center">
+                 <p>This is a large modal.</p>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/y5KHqaTzOdg" frameborder="0" allowfullscreen></iframe>
+                
+            </div>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+                        </div>
+                     </div>
+                </div>
+
+                <div class="bs-calltoaction bs-calltoaction-primary">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">Its a Call To Action</h1>
+                            <div class="cta-desc">
+                                <p>Describe the action here.</p>
+                                <p>Describe the action here.</p>
+                                <p>Describe the action here.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="#" class="btn btn-lg btn-block btn-primary">Go for It!</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="bs-calltoaction bs-calltoaction-info">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">Its a Call To Action</h1>
+                            <div class="cta-desc">
+                                <p>Describe the action here.</p>
+                                <p>Describe the action here.</p>
+                                <p>Describe the action here.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="#" class="btn btn-lg btn-block btn-info">Go for It!</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="bs-calltoaction bs-calltoaction-success">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">Its a Call To Action</h1>
+                            <div class="cta-desc">
+                                <p>Describe the action here.</p>
+                                <p>Describe the action here.</p>
+                                <p>Describe the action here.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="#" class="btn btn-lg btn-block btn-success">Go for It!</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="bs-calltoaction bs-calltoaction-warning">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">Its a Call To Action</h1>
+                            <div class="cta-desc">
+                                <p>Describe the action here.</p>
+                                <p>Describe the action here.</p>
+                                <p>Describe the action here.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="#" class="btn btn-lg btn-block btn-warning">Go for It!</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="bs-calltoaction bs-calltoaction-danger">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">Its a Call To Action</h1>
+                            <div class="cta-desc">
+                                <p>Describe the action here.</p>
+                                <p>Describe the action here.</p>
+                                <p>Describe the action here.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="#" class="btn btn-lg btn-block btn-danger">Go for It!</a>
+                        </div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    
+</section>
+
+
+
+  
+
+
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h1>CreateWebapplication</h1>
+                    <h1>Example WebApplication</h1>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-6">
@@ -280,13 +568,15 @@
                     <h1>Pe-Test</h1>
                     <h3>แบบทดสอบเพื่อตรวจสอบว่าคุณเข้าใจในบทเรียนหรือไม่</h3>
                     <a href="#" class="btn btn-lg btn-light">ทำแบบทดสอบ</a>
-                    <a href="#" class="btn btn-lg btn-dark">ข้ามแบบทดสอบ</a>
+                    <a href="#contact" class="btn btn-lg btn-dark">ข้ามแบบทดสอบ</a>
                 </div>
             </div>
         </div>
     </aside>
 
     </section>
+
+
 
 
     <!-- Map -->
