@@ -367,7 +367,7 @@
                 <div class="bs-calltoaction bs-calltoaction-default">
                     <div class="row">
                         <div class="col-md-9 cta-contents">
-                            <h1 class="cta-title">Step1 Simple Run WebApplication</h1>
+                            <h1 class="cta-title">Step1. Simple Run WebApplication</h1>
                             <div class="cta-desc">
                                 <h3>1.Start Xampp การใช้งาน Xampp เพื่อใช้รัน WebApplication</h3>
                                 <p>อันดับแรกให้คลิก XAMPP Control Panel ขึ้นมาแล้วคลิก Start->Apache และ Start->MySQL </p>
@@ -418,11 +418,23 @@
                 <div class="bs-calltoaction bs-calltoaction-primary">
                     <div class="row">
                         <div class="col-md-9 cta-contents">
-                            <h1 class="cta-title">Its a Call To Action</h1>
+                            <h1 class="cta-title">Step2. Create Controller and Veiw</h1>
                             <div class="cta-desc">
-                                <p>Describe the action here.</p>
-                                <p>Describe the action here.</p>
-                                <p>Describe the action here.</p>
+                                <h3>1.Start Sublime Text เพื่อเปิดไฟล์โปรเจค</h3>
+                                <p>ให้คลิก File -> OpenFolder แล้วเลือกที่อยู่ของโปรเจค C:\xampp\htdocs\SimpleWebApp</p>
+                                <h3>2.สร้าง Controller เพื่อเรียกหน้า View มาแสดง</h3>
+                                <p>ให้คลิก File -> Newfile หรือ Ctrl+N  แล้วคลิก File -> Save As หรือ Ctrl+Shift+S ตั้งชื่อไฟล์ Test_Contorller.php เลือกที่อยู่ไฟล์ C:\xampp\htdocs\SimpleWebApp\controllers แล้วคลิก Save</p>
+                                <h3>3.พิมพ์ Code ในการทำงานของ Controller</h3>
+                                    <img src="bs/img/controller.jpg" class="img-responsive" alt="Image">
+                                    <h4>อธิบายโค้ด</h4>
+                                    <p>บรรทัดที่ 1 ทำการเปิดโค้ด php เพื่อให้คำสั่งทำงาน</p>
+                                    <p>บรรทัดที่ 4 สร้าง Class Test_Contorller และเรียกใช้คุณสมบัติ Contorller (ชื่อ Class ต้องตรงกับชื่อไฟล์)</p>
+                                    <p>บรรทัดที่ 7 สร้าง function index เพื่อเรียกใช้ View </p>
+                                    <p>บรรทัดที่ 9 เป็นการเรียกใช้หน้า View ที่ชื่อว่า Hello มาแสดง </p>
+                                <h3>4. สร้างหน้า View เพื่อใช้ในการแสดงหน้าเว็บ</h3>
+                                <p>ให้คลิก File -> Newfile หรือ Ctrl+N  แล้วคลิก File -> Save As หรือ Ctrl+Shift+S ตั้งชื่อไฟล์ Hello.php เลือกที่อยู่ไฟล์ C:\xampp\htdocs\SimpleWebApp\views แล้วคลิก Save</p>
+                                <h3>3.พิมพ์ Code ในการทำงานของหน้า View</h3>
+                                <img src="bs/img/controller.jpg" class="img-responsive" alt="Image">
                             </div>
                         </div>
                         <div class="col-md-3 cta-button">
